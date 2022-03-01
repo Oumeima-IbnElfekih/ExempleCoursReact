@@ -7,6 +7,7 @@ import useWindowWidth from './Customhook/useWindowWidth';
 import useIsOnline from './Customhook/useIsOnline';
 import Memo from './hooks/Memo';
 import CallBack from './hooks/CallBack';
+import Redux from './ExempleRedux/Redux';
 function Home (){
   return <h1>Home</h1>
 }
@@ -35,6 +36,7 @@ function App() {
       <Switch>
       <Route exact  path="/" component={Home}/>
       <Route exact  path="/memo" component={Memo}/>
+      <Route exact  path="/redux" component={Redux}/>
       <Route exact  path="/callback" component={CallBack}/>
       <Route path="/about" component={About}/>
       <Route path="/contact" component={Contact}/>
